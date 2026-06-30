@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+@import "./base.css";
+@import "./layout.css";
+
+@import "../components/layout/Navbar.css";
+@import "../components/common/Buttons.css";
+@import "../components/contact/Forms.css";
+@import "../components/avatar/SectionAvatar.css";
+
+@import "../components/hero/Hero.css";
+@import "../components/experience/Experience.css";
+@import "../components/projects/Project.css";
+@import "../components/skills/Skills.css";
+@import "../components/achievements/Achievements.css";
+@import "../components/education/Education.css";
+@import "../components/github/GithubStats.css";
+@import "../components/contact/Contact.css";
+@import "../components/layout/Footer.css";

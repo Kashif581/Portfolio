@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --cyan: #00f5d4;
+  --cyan-dim: #00c4a9;
+  --bg: #0a0d0f;
+  --bg2: #0f1317;
+  --bg3: #141a1f;
+  --border: rgba(0, 245, 212, 0.15);
+  --border-dim: rgba(255, 255, 255, 0.06);
+  --text: #e8edf2;
+  --text-muted: #6b7a87;
+  --text-dim: #3d4d5a;
+  --mono: "JetBrains Mono", monospace;
+  --sans: "Space Grotesk", sans-serif;
+  --radius: 10px;
+  --radius-lg: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cyan-dim);
+  border-radius: 2px;
+}

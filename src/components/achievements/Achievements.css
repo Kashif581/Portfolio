@@ -1,0 +1,204 @@
+/* ==========================
+   Achievements
+========================== */
+
+#achievements {
+  padding: 7rem 0;
+}
+
+.sec-wrap {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* Heading */
+
+.section-label {
+  color: #7c8aa5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 4rem;
+}
+
+.section-title span {
+  color: #6d8dff;
+}
+
+/* STACK */
+
+/* STACK CONTAINER */
+
+.stack-wrap {
+  position: relative;
+
+  width: min(700px, 92vw);
+
+  height: 430px;
+
+  margin: auto;
+  margin-bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STACKED BACK CARDS */
+
+/* STACKED BACK CARDS */
+
+.stack-bg {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 34px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(10px);
+
+  transition: transform 0.35s ease;
+}
+
+/* slightly tilted cards */
+
+.stack-2 {
+  transform: translateY(14px) translateX(-8px) rotate(-3deg) scale(0.97);
+
+  opacity: 0.55;
+}
+
+.stack-3 {
+  transform: translateY(30px) translateX(8px) rotate(3deg) scale(0.94);
+
+  opacity: 0.3;
+}
+
+/* ACTIVE FRONT CARD */
+
+.ach-card {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 34px;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  border: 1px solid rgba(109, 141, 255, 0.18);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+
+  cursor: grab;
+
+  touch-action: pan-y;
+
+  /* slight natural tilt */
+  transform: rotate(-1deg);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* little lift while dragging/hover */
+.ach-card:hover {
+  transform: rotate(-1deg) translateY(-4px);
+}
+
+/* ICON */
+
+.ach-icon {
+  width: 85px;
+  height: 85px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.2rem;
+
+  background: rgba(109, 141, 255, 0.14);
+
+  margin-bottom: 2rem;
+}
+
+/* TEXT */
+
+.ach-title {
+  font-size: 1.7rem;
+
+  color: white;
+
+  margin-bottom: 1rem;
+
+  font-weight: 800;
+}
+
+.ach-sub {
+  color: #6d8dff;
+
+  font-size: 1rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.ach-desc {
+  color: #c7cfdd;
+
+  line-height: 1.9;
+
+  max-width: 90%;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .stack-wrap {
+    width: 100%;
+    height: 360px;
+  }
+
+  .ach-card {
+    padding: 2rem;
+  }
+
+  .ach-title {
+    font-size: 1.3rem;
+  }
+
+  .ach-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stack-wrap {
+    height: 340px;
+  }
+}

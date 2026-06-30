@@ -1,0 +1,124 @@
+.sec-avatar {
+  position: absolute;
+  right: -200px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  z-index: 20;
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+.sec-avatar:active {
+  cursor: grabbing;
+}
+
+.av-image {
+  width: 80px; /* decrease size */
+  height: 100px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+.av-face {
+  width: 50px;
+  height: 50px;
+}
+
+.av-stage {
+  width: 68px;
+  height: 68px;
+}
+
+/*  */
+
+/* ground shadow that scales with "height" */
+.av-shadow {
+  width: 150px;
+  height: 20px;
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 245, 212, 0.28) 0%,
+    transparent 75%
+  );
+  border-radius: 50%;
+  margin-top: 30px;
+  transform: scaleX(1);
+  transition:
+    transform 0.1s,
+    opacity 0.1s;
+}
+
+/* drag hint label */
+/* DIALOG BOX */
+
+.dialog-box {
+  position: absolute;
+
+  bottom: 130px;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  min-width: 150px;
+  max-width: 220px;
+
+  padding: 0.9rem 1rem;
+
+  border-radius: 18px;
+
+  background: rgba(18, 25, 35, 0.92);
+
+  border: 1px solid rgba(109, 141, 255, 0.25);
+
+  color: white;
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+
+  opacity: 1;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* speech tail */
+
+.dialog-box::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -10px;
+
+  transform: translateX(-50%) rotate(45deg);
+
+  width: 18px;
+  height: 18px;
+
+  background: rgba(18, 25, 35, 0.92);
+
+  border-right: 1px solid rgba(109, 141, 255, 0.25);
+
+  border-bottom: 1px solid rgba(109, 141, 255, 0.25);
+}
+
+/* floating effect */
+
+.sec-avatar:hover .dialog-box {
+  transform: translateX(-50%) translateY(-6px);
+}
