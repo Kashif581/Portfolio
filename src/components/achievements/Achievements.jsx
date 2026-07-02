@@ -2,40 +2,26 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionAvatar from "../avatar/SectionAvatar";
 import awardImg from "../../assets/images/achievements.png";
+import laptopAward from "../../assets/images/PMYLS.png";
+import GSCAward from "../../assets/images/GSC.png";
 import "./Achievements.css";
 
 const achievements = [
   {
-    icon: "🏆",
-    title: "Global Hackathon — 1st Place",
-    sub: "GrizzHacks 2023 · 500+ Participants",
+    image:laptopAward,
+    title: "Global Sustainability Challenge — Region Finalist",
+    sub: "Sustainability 2026 · 500+ Participants",
     desc:
-      "Built an AI-powered accessibility tool in 24 hours, winning the top prize out of 120 team submissions."
+      "Built a conditional GAN based application in order to solve the problem of data scarcity in Agriculture domain."
   },
 
   {
-    icon: "🥇",
-    title: "Global Hackathon — 1st Place",
-    sub: "CodeStorm 2022 · International",
+    image:GSCAward,
+    title: "Prime Minister Youth Laptop Scheme Awardee",
+    sub: "PMYLS 2024",
     desc:
-      "Designed a real-time disaster response coordination platform that impressed judges with its scalability."
+      "Based on overall grade awarded with laptop through PMYLS."
   },
-
-  {
-    icon: "⭐",
-    title: "Open Source Contributor",
-    sub: "1,200+ GitHub Stars · 21+ Repos",
-    desc:
-      "Maintained a popular React hooks library with over a thousand GitHub stars and active community engagement."
-  },
-
-  {
-    icon: "📜",
-    title: "AWS Certified Solutions Architect",
-    sub: "Amazon Web Services · 2023",
-    desc:
-      "Earned professional certification covering scalability, reliability, and cost-optimisation on AWS."
-  }
 ];
 
 export default function Achievements() {
@@ -105,7 +91,11 @@ export default function Achievements() {
               }}
             >
               <div className="ach-icon">
-                {item.icon}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="ach-image"
+                />
               </div>
 
               <div className="ach-title">
@@ -124,8 +114,15 @@ export default function Achievements() {
 
           </AnimatePresence>
 
-          <div className="card-indicator">
-            {index + 1} / {achievements.length}
+          <div className="card-indicators">
+            {achievements.map((_, i) => (
+              <button
+                key={i}
+                className={`indicator-dot ${i === index ? "active" : ""}`}
+                onClick={() => setIndex(i)}
+                aria-label={`Go to achievement ${i + 1}`}
+              />
+            ))}
           </div>
 
         </div>

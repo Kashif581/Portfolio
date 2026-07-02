@@ -1,61 +1,61 @@
 import SectionAvatar from "../avatar/SectionAvatar";
 import projectsImg from "../../assets/images/skills.png"
-import aiImg from "../../assets/images/images.png";
-import scraperImg from "../../assets/images/images.png";
-import ecommerceImg from "../../assets/images/images.png";
-import chatImg from "../../assets/images/images.png";
-import searchImg from "../../assets/images/images.png";
-import taskImg from "../../assets/images/images.png";
+import VisGuardImg from "../../assets/images/VisGuard.png";
+import LipReaderImg from "../../assets/images/LipReader.png";
+import AirPointerImg from "../../assets/images/AirPointer.png";
+import VisioMate from "../../assets/images/VisioMate.png";
+import CheatingSurImg from "../../assets/images/Cheating_Sur.png";
+import HumanActImg from "../../assets/images/Human_Act.png";
 import { FaGithub } from "react-icons/fa";
 import "./Project.css"
 
 const projects = [
   {
-    image: aiImg,
-    name: "AI Agents Platform",
-    desc: "Multi-agent orchestration framework...",
-    tags: ["Python", "LangChain", "FastAPI", "React"],
+    image: VisGuardImg,
+    name: "VisGurad",
+    desc: "Multi-Camera streaming tracking and detection platform...",
+    tags: ["OpenCV", "YOLO26", "Roboflow", "React", "Mulvius", "HuggingFace"],
     github: "https://github.com/Kashif581/VisGuard"
   },
 
   {
-    image: scraperImg,
-    name: "DataScraper Pro",
-    desc: "Scalable scraping pipeline...",
-    tags: ["Python","Playwright","PostgreSQL","Docker"],
-    github: "https://github.com/Kashif581/VisGuard"
+    image: LipReaderImg,
+    name: "LipReader",
+    desc: "Caputre silent lip movements...",
+    tags: ["OpenCV","CNN","LSTM","TensorFlow", ],
+    github: "https://github.com/Kashif581/LipReader"
   },
 
   {
-    image: ecommerceImg,
-    name: "E-Commerce Platform",
-    desc: "Full-stack e-commerce...",
+    image: AirPointerImg,
+    name: "AirPointer",
+    desc: "Control Cursor through hand gesture...",
     tags: ["Next.js","TypeScript","Prisma","Stripe"],
-    github: "https://github.com/Kashif581/VisGuard"
+    github: "https://github.com/Kashif581/Air_Mind"
   },
 
   {
-    image: chatImg,
-    name: "Real-Time Chat App",
-    desc: "Encrypted messaging...",
-    tags: ["Go","React","WebSockets","Redis"],
-    github: "https://github.com/Kashif581/VisGuard"
+    image: VisioMate,
+    name: "VisioMate",
+    desc: "When you’re crossing the road and see a car...",
+    tags: ["OpenCV","YOLOv8","Gemini","Pyttsx3", "Streamlit"],
+    github: "https://github.com/Kashif581/VisioMate_LabLab.ai_CO-Creating_With_GPT-5_Hackthone"
   },
 
   {
-    image: searchImg,
-    name: "Content Indexing Engine",
-    desc: "Semantic search...",
-    tags: ["Python","pgvector","OpenAI"],
-    github: "https://github.com/Kashif581/VisGuard"
+    image: CheatingSurImg,
+    name: "Cheating Surveillance System",
+    desc: "The Cheating Surveillance System is designed to...",
+    tags: ["OpenCV","dlib","YOLOv8", "Roboflow"],
+    github: "https://github.com/Kashif581/Cheating-Surveillance-System"
   },
 
   {
-    image: taskImg,
-    name: "Task Manager App",
-    desc: "Cross-platform productivity...",
-    tags: ["React Native","SQLite"],
-    github: "https://github.com/Kashif581/VisGuard"
+    image: HumanActImg,
+    name: "Human Activity Recognition",
+    desc: "Human Activity Recognition system which can enable companies to...",
+    tags: ["CNN","LSTM", "Colab", ],
+    github: "https://github.com/Kashif581/Human-Activity-Recognition-on-UCF50-dataset-using-ConvLSTM-and-LRCN-models"
   }
 ];
 

@@ -52,7 +52,7 @@
 
 .edu-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(99, 102, 241, 0.5);
+  border-color: rgb(95, 245, 240);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 

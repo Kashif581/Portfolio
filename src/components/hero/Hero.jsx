@@ -28,8 +28,7 @@ function Hero() {
           </p>
 
           <p className="hero-bio">
-            I build fast, scalable web applications and
-            intelligent systems that solve real problems.
+            I build fast, edge-optimized computer vision solutions for complex real-world challenges.
           </p>
 
           {/* Buttons */}

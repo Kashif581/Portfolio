@@ -5,39 +5,39 @@ const education = [
   {
     icon: "🎓",
     degree:
-      "Bachelor of Science in Computer Science",
+      "Bachelor of Software Engineering",
 
     school:
       "The Islamia University of Bahawalpur",
 
     period:
-      "2022 – 2026 · GPA: 3.8 / 4.0"
+      "2022 – 2026 · GPA: 3.74 / 4.0"
   },
 
   {
     icon: "📘",
 
     degree:
-      "Deep Learning Specialization",
+      "FSC Pre-Engineering",
 
     school:
-      "Coursera · deeplearning.ai",
+      "Mudrass-Tul-Binat, Sadiqabad",
 
     period:
-      "2022 · 5-course certification"
+      "2020 - 2022 · Marks: 923 / 1100"
   },
 
   {
     icon: "📗",
 
     degree:
-      "Full Stack Web Development Bootcamp",
+      "Matriculation",
 
     school:
-      "The Odin Project",
+      "Mudrass-Tul-Binat, Sadiqabad",
 
     period:
-      "2019 · Completed with distinction"
+      "2018 - 2020 · Marks: 906 / 1100"
   }
 ];
 
@@ -54,7 +54,7 @@ export default function Education() {
           </p>
 
           <h2 className="section-title">
-            Educational <span>Background</span>
+            Education & <span>Certifications</span>
           </h2>
 
         </div>

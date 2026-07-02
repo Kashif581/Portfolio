@@ -4,9 +4,9 @@ import githubAvatar from "../../assets/images/github.png";
 
 const stats = [
   { value: "1.2K", label: "total stars" },
-  { value: "340", label: "followers" },
-  { value: "21+", label: "repositories" },
-  { value: "892", label: "commits (year)" }
+  { value: "21", label: "followers" },
+  { value: "60+", label: "repositories" },
+  // { value: "892", label: "commits (year)" }
 ];
 
 // Generate 52 weeks × 7 days

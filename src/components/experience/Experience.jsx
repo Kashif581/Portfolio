@@ -5,45 +5,36 @@ import { FaBuilding } from "react-icons/fa";
 const experience = [
   {
     role:
-      "Senior Full Stack Developer",
+      "Deep Learning Intern",
 
     company:
-      "TechCorp Solutions",
+      "Buildables",
 
     period:
-      "Jan 2023 – Present",
+      "Jun 2025 – Aug 2025",
 
-    desc:
-      "Led development of a microservices-based SaaS platform serving 50,000+ users. Architected the backend API layer using Node.js and PostgreSQL, reduced page load times by 40%, and mentored a team of 4 junior developers."
+    desc: [
+      "Leveraged Selenium, Crawl4AI, and GitHub Actions to automate data scraping from PakWheels.com, reducing manual data collection by 90%.",
+      "Developed a Human Activity Recognition system to provide production statistics, improve assembly quality, enforce safety, and optimize industrial processes.",
+      "Build Google Calendar assistant which enables individuals to automatically schedule, update, delete and summarize upcoming events."
+    ]
   },
 
   {
     role:
-      "Full Stack Developer",
+      "Data Engineering Intern",
 
     company:
-      "Digital Dynamics Ltd.",
+      "Bytewise Limited",
 
     period:
-      "Jun 2021 – Dec 2022",
+      "May 2024 – July 2025",
 
-    desc:
-      "Built and maintained client web applications using React and Django REST Framework. Integrated AI/ML pipelines for automated content classification and collaborated with design teams to deliver pixel-perfect UIs."
+    desc: [
+      "Created efficient ETL pipeline for Green Taxis by using technologies such as Dbt, Neon, and SQL, which help business teams to analyze monthly revenue patterns, pickup/drop-off hotspots, and driver performance to uncover areas of optimization.",
+      "Implemented a comprehensive Data Pipeline using Azure Data Factory, Databricks, PySpark, Python, and PowerBI to analyze and visualize Formula 1 race results",
+    ]
   },
-
-  {
-    role:
-      "Frontend Developer (Intern → Full-time)",
-
-    company:
-      "Startup Nexus",
-
-    period:
-      "Mar 2020 – May 2021",
-
-    desc:
-      "Started as an intern and converted to full-time within 3 months. Developed reusable React component libraries, implemented real-time features using WebSockets, and contributed to the company's open-source design system."
-  }
 ];
 
 export default function Experience() {
@@ -118,14 +109,11 @@ export default function Experience() {
 
                   </div>
 
-                  <p
-                    className="
-                    exp-desc
-                    "
-                  >
-                    {item.desc}
-                  </p>
-
+                  <ul className="exp-desc">
+                    {item.desc.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
 
               )
