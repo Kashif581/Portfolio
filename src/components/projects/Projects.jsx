@@ -37,7 +37,7 @@ const projects = [
   {
     image: VisioMate,
     name: "VisioMate",
-    desc: "When you’re crossing the road and see a car...",
+    desc: "When you’re crossing the road and see a...",
     tags: ["OpenCV","YOLOv8","Gemini","Pyttsx3", "Streamlit"],
     github: "https://github.com/Kashif581/VisioMate_LabLab.ai_CO-Creating_With_GPT-5_Hackthone"
   },
