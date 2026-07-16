@@ -93,7 +93,7 @@
 }
 
 .nav-links a:hover {
-  color: var(--cyan);
+  color: rgb(48, 1, 5);
 }
 
 /* ICONS */
