@@ -15,18 +15,6 @@
   overflow: hidden;
 }
 
-/* .hero-particles {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  z-index: 0;
-
-  pointer-events: none;
-} */
 .hero-particles {
   position: absolute;
 
@@ -40,27 +28,6 @@
 
   pointer-events: none;
 }
-/* .hero-inner {
-  position: relative;
-
-  z-index: 2;
-} */
-
-/* Container */
-
-/* .hero-inner {
-  width: min(1180px, 90%);
-
-  margin: 0 auto;
-
-  display: grid;
-
-  grid-template-columns: 1.1fr 0.9fr;
-
-  align-items: center;
-
-  gap: 10rem;
-} */
 
 .hero-inner {
   position: relative;
